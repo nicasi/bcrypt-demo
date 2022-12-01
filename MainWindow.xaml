@@ -1,0 +1,23 @@
+﻿<Window x:Class="bcrypt_test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:bcrypt_test"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="650" Height="500" ResizeMode="NoResize">
+    <StackPanel Margin="100, 50, 100, 100">
+
+        <TextBlock FontSize="24">BCrypt Test</TextBlock>
+        <TextBlock Margin="0, 5, 0, 0">Enter password:</TextBlock>
+        <TextBox Padding="5" Margin="0, 5" x:Name="tbx_password"></TextBox>
+        <Button Padding="5" Margin="0, 5" Click="Save_Button_Click">Save Password</Button>
+        <TextBlock Margin="0, 5, 0, 0">Hashed password:</TextBlock>
+        <TextBox Padding="5" Margin="0, 5" x:Name="tbx_hashedPWD"></TextBox>
+        <TextBlock Margin="0, 5, 0, 0">Password to check against hash:</TextBlock>
+        <TextBox Padding="5" Margin="0, 5" x:Name="tbx_password_to_check"></TextBox>
+        <Button Padding="5" Margin="0, 5" Click="Check_Button_Click">Check Password</Button>
+
+
+    </StackPanel>
+</Window>
